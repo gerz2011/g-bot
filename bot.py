@@ -1,12 +1,10 @@
 import os
-from flask import Flask, request
 import telebot
 from telebot import apihelper
 from telebot import types
 from data import price_iphone
 from data import price_ipad
 
-server = Flask(__name__)
 
 TOKEN = '781098537:AAEGQ7-kRv6Pt8KGs5CfW9RiPRLU8lKHp58'
 bot = telebot.TeleBot(TOKEN)
@@ -105,20 +103,4 @@ def answe(m):
 
 
 
-@server.route('/' + TOKEN, methods=['POST'])
-def getMessage():
-    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
-    return "!", 200
-
-
-@server.route("/")
-def webhook():
-    bot.remove_webhook()
-    bot.set_webhook(url='https://g-bot-1.herokuapp.com/' + TOKEN)
-    return "!", 200
-
-
-if __name__ == "__main__":
-    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
-
-# bot.polling()
+bot.polling()
