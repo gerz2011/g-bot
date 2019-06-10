@@ -12,7 +12,7 @@ TOKEN = '781098537:AAEGQ7-kRv6Pt8KGs5CfW9RiPRLU8lKHp58'
 bot = telebot.TeleBot(TOKEN)
 
 
-apihelper.proxy = {'https':'https://188.216.77.95:8118'}
+# apihelper.proxy = {'https':'https://188.216.77.95:8118'}
 
 model = 'iphone_ipad_wath_macbook'.split('_')
 link = 'Мы на крте_Контакты_Чат'.split('_')
@@ -119,7 +119,7 @@ def webhook():
 
 
 if __name__ == "__main__":
-    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
+    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 6000)))
 
         
 
