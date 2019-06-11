@@ -22,7 +22,7 @@ problem_8 = 'Дисплей ориг_Замена стекла_Заднее ст
 problem_7 = 'Дисплей ориг_Замена стекла_Копия ААА_Аккумулятор_Защитное стекло'.split('_')
 problem_ipad = 'Замена стекла_Замена модуля'.split('_')
 
-iphone = 'Xs Max_Xs_Xr_X_8 Plus_8_7 Plus_7_6s Plus_6s_6_Plus_6_SE_5 серия'.split('_')
+iphone = 'Xs Max_Xs_Xr_X_8 Plus_8_7 Plus_7_6s Plus_6s_6 Plus_6_SE_5 серия'.split('_')
 
 ipad = list(price_ipad)
 
