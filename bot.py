@@ -13,7 +13,7 @@ TOKEN = '781098537:AAEGQ7-kRv6Pt8KGs5CfW9RiPRLU8lKHp58'
 bot = telebot.TeleBot(TOKEN)
 
 
-apihelper.proxy = {'https':'https://188.216.77.95:8118'}
+# apihelper.proxy = {'https':'https://188.216.77.95:8118'}
 
 main_menu = 'iphone_ipad_wath_macbook_Наши контакты'.split('_')
 
