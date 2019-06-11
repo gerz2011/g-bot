@@ -2,7 +2,9 @@ import os
 import telebot
 from telebot import apihelper
 from telebot import types
-from data import price_iphone
+from data import price_iphone_x
+from data import price_iphone_8
+from data import price_iphone_7
 from data import price_ipad
 
 
@@ -15,7 +17,9 @@ bot = telebot.TeleBot(TOKEN)
 model = 'iphone_ipad_wath_macbook'.split('_')
 link = 'Мы на крте_Контакты_Чат'.split('_')
 problem = 'Дисплей ориг_Замена стекла_Копия ААА_Аккумулятор_Защитное стекло'.split('_')
-iphone = list(price_iphone)
+problem1 = 'Дисплей ориг_Замена стекла_Копия ААА_Заднее стекло_'
+
+iphone = 'Xs Max_Xs_Xr_X_8 Plus_8_7 Plus_7_6s Plus_6s_6_Plus_6_SE_5 серия'.split('_')
 ipad = list(price_ipad)
 
 contact = f'Выездной ремонт iPhone "PROFIPHONE"\nтел: 8 931 340 38 33\nтел: 8 (812) 648-59-51\nадес: м. Сенная, Московский пр. д2'
@@ -95,11 +99,15 @@ def answe(m):
 
 ###############################################################################
 ##прайс с ценами
-    if m.text in price_iphone:
-        bot.send_message(m.from_user.id, text_massage(m.text, price_iphone))
+    if m.text in price_iphone_x:
+        bot.send_message(m.from_user.id, text_massage(m.text, price_iphone_x))
+    if m.text in price_iphone_8:
+        bot.send_message(m.from_user.id, text_massage(m.text, price_iphone_8))
+    if m.text in price_iphone_7:
+        bot.send_message(m.from_user.id, text_massage(m.text, price_iphone_7))
     if m.text in price_ipad:
         bot.send_message(m.from_user.id, text_massage(m.text, price_ipad))
-    else: print('no price')
+
 
 
 
