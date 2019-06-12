@@ -15,7 +15,7 @@ bot = telebot.TeleBot(TOKEN)
 
 # apihelper.proxy = {'https':'https://188.216.77.95:8118'}
 
-main_menu = 'iphone_ipad_wath_macbook_Наши контакты'.split('_')
+main_menu = 'iphone_ipad_watch_macbook_Наши контакты'.split('_')
 
 problem_x = 'Дисплей ориг_Замена стекла_Заднее стекло_Аккумулятор_Защитное стекло'.split('_')
 problem_8 = 'Дисплей ориг_Замена стекла_Заднее стекло_Копия ААА_Аккумулятор_Защитное стекло'.split('_')
