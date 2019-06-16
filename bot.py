@@ -25,6 +25,7 @@ problem_ipad = 'Замена стекла_Замена модуля'.split('_')
 iphone = 'Xs Max_Xs_Xr_X_8 Plus_8_7 Plus_7_6s Plus_6s_6 Plus_6_SE_5 серия'.split('_')
 
 ipad = list(price_ipad)
+print(ipad)
 
 contact = f'Выездной ремонт iPhone "PROFIPHONE"\nтел: 8 931 340 38 33\nтел: 8 (812) 648-59-51\nадес: м. Сенная, Московский пр. д2'
 
